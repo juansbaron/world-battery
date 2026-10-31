@@ -1,0 +1,19 @@
+/** process styles */
+.process{background:#fff}
+.process-grid{display:grid;grid-template-columns:1fr .9fr;gap:100px;align-items:center}
+.process h2{font-size:43px;color:var(--navy)}
+.process h2 span{color:#6387bc}
+.process-lede{max-width:480px;color:var(--muted);font-size:15px;margin:21px 0 25px}
+.process .button-outline{color:var(--navy);border-color:#bac8d9;background:#fff}
+.steps{border-top:1px solid var(--line)}
+.step{display:flex;gap:20px;padding:23px 0;border-bottom:1px solid var(--line)}
+.step-index{font:800 12px var(--display);color:#6d91c4;padding-top:3px}
+.step h3{font:800 16px var(--display);margin:0 0 4px;color:var(--navy)}
+.step p{margin:0;color:var(--muted);font-size:13px}
+.contact{padding-top:18px;background:#fff}
+.contact-card{display:flex;align-items:center;justify-content:space-between;gap:30px;border-radius:14px;padding:43px 48px;background:linear-gradient(115deg,#eaf1fa,#f4f8ee);border:1px solid #e0e8ee}
+.contact-card .eyebrow{color:#6280aa}
+.contact h2{font-size:38px}
+.contact-card>div:first-child>p:last-child{margin:10px 0 0;color:var(--muted);font-size:14px}
+.contact-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.contact-actions a:last-child{color:#52647d;font-size:13px}
