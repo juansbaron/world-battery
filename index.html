@@ -19,14 +19,17 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/premium.css?v=worldbattery-3" />
+    <link rel="stylesheet" href="css/premium.css?v=worldbattery-4" />
     <style>
       /* Ajustes críticos en el documento para evitar estilos antiguos en caché */
       .utility-bar{display:none!important}
       .carousel-slide img{object-fit:contain!important;background:#050d18!important}
-      #contenido>.service-strip .strip-items>span{cursor:default;transition:background-color .22s ease,color .22s ease,transform .22s ease}
-      #contenido>.service-strip .strip-items>span:hover{background:#091e37;color:#fff;transform:translateY(-2px)}
-      #contenido>.service-strip .strip-items>span:hover b{color:#ff858b}
+      #contenido>.service-strip{border-radius:0!important;padding:0!important}
+      #contenido>.service-strip>.strip-items{width:100%;max-width:none;min-height:82px;align-items:stretch;padding:0;margin:0}
+      #contenido>.service-strip>.strip-items>span{height:100%;min-height:82px;width:100%;justify-content:flex-start;align-items:center;padding:0 clamp(16px,4vw,72px);margin:0;border-radius:0!important;border-right:1px solid #ffffff30;cursor:default;transition:background-color .22s ease,color .22s ease}
+      #contenido>.service-strip>.strip-items>span:last-child{border-right:0}
+      #contenido>.service-strip>.strip-items>span:hover{background:#091e37!important;color:#fff!important}
+      #contenido>.service-strip>.strip-items>span:hover b{color:#ff858b}
       #marcas .brand-grid>span{border:1px solid #e0e5e9;border-radius:13px;transition:color .2s ease,background-color .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease}
       #marcas .brand-grid>span:hover{color:#fff;border-color:transparent;transform:translateY(-4px);box-shadow:0 12px 24px #06172a20}
       #marcas .brand-grid>span:nth-child(1):hover{background:#e5ae00;color:#101820}
@@ -42,9 +45,9 @@
       .whatsapp-float{display:flex;align-items:center;gap:10px;padding:9px 16px 9px 9px;border:1px solid #dce5e0;border-radius:999px;background:#fff;color:#173127;box-shadow:0 8px 24px #071f3d1a;text-transform:none;letter-spacing:0}
       .whatsapp-float svg{display:block;width:32px;height:32px;padding:6px;border-radius:50%;background:#149b62;fill:#fff}
       .whatsapp-float b{font-size:11px;font-weight:700}
-      .site-header,.carousel,.service-card,.contact-panel{border-radius:16px}
+      .site-header{border-radius:0}.brand img{border-radius:0}.hero{border-radius:0}.carousel{border-radius:14px}.service-strip{border-radius:0}.service-card{border-radius:14px}.contact-panel{border-radius:18px}
       .button{border-radius:999px}
-      @media(max-width:700px){.site-header,.contact-panel{border-radius:12px}.whatsapp-float{padding:8px 13px 8px 8px}.whatsapp-float svg{width:30px;height:30px}#contenido>.service-strip .strip-items>span:hover{transform:none}}
+      @media(max-width:700px){.site-header,.brand img,.hero,.service-strip{border-radius:0}.contact-panel{border-radius:15px}#contenido>.service-strip>.strip-items{min-height:0;grid-template-columns:1fr 1fr}#contenido>.service-strip>.strip-items>span{min-height:64px;padding:10px 14px;border-top:1px solid #ffffff26}#contenido>.service-strip>.strip-items>span:nth-child(odd){border-right:1px solid #ffffff30}#contenido>.service-strip>.strip-items>span:last-child{border-right:0}.whatsapp-float{padding:8px 13px 8px 8px}.whatsapp-float svg{width:30px;height:30px}}
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1XLGSY39T"></script>
     <script>
@@ -111,7 +114,7 @@
         <div class="hero-bottom container"><span>ENERGÍA QUE TE ACOMPAÑA</span><span class="hero-bottom-rule"></span><a href="#servicios">DESCUBRE NUESTROS SERVICIOS <b aria-hidden="true">↓</b></a></div>
       </section>
 
-      <section class="service-strip" aria-label="Ventajas del servicio"><div class="container strip-items"><span><b>01</b> Venta de baterías</span><span><b>02</b> Instalación a domicilio</span><span><b>03</b> Desvare por batería</span><span><b>04</b> Bogotá y alrededores</span></div></section>
+      <section class="service-strip" aria-label="Ventajas del servicio"><div class="strip-items"><span><b>01</b> Venta de baterías</span><span><b>02</b> Instalación a domicilio</span><span><b>03</b> Desvare por batería</span><span><b>04</b> Bogotá y alrededores</span></div></section>
 
       <section class="services section-pad" id="servicios"><div class="container">
         <div class="section-heading"><div><p class="section-kicker">SERVICIO PARA SEGUIR TU CAMINO</p><h2>Te ayudamos a volver<br />a <span>encender.</span></h2></div><p>Nos escribes, nos cuentas qué vehículo tienes y coordinamos la atención donde estés en Bogotá y alrededores.</p></div>
