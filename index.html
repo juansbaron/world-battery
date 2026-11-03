@@ -32,9 +32,11 @@
       #contenido>.service-strip>.strip-items>span:hover b{color:#ff858b}
       #marcas .brand-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
       #marcas .brand-item{display:grid;place-items:center;min-width:0;min-height:84px;padding:14px;background:var(--brand-tint,#fff);border:1px solid color-mix(in srgb,var(--brand-color) 24%,white);border-radius:13px;transition:background-color .22s ease,border-color .22s ease,transform .22s ease,box-shadow .22s ease}
-      #marcas .brand-item img{display:block;width:100%;max-width:112px;height:44px;object-fit:contain}
+      #marcas .brand-item img{display:block;width:100%;max-width:132px;height:52px;object-fit:contain}
       #marcas .brand-item:hover{background-color:color-mix(in srgb,var(--brand-color) 15%,var(--brand-tint,white));border-color:var(--brand-color);transform:translateY(-3px);box-shadow:0 12px 24px #06172a14}
-      #marcas .brand-item img[src$="willard.png"]{width:96px;height:48px;max-width:none;object-fit:cover;object-position:left center}
+      #marcas .brand-item-willard{display:flex!important;justify-content:center;gap:10px}
+      #marcas .brand-item-willard img{flex:0 0 50px;width:50px;height:50px;max-width:none;object-fit:cover;object-position:left center;border-radius:50%}
+      #marcas .brand-item-willard span{color:#b51f2a;font-size:15px;font-weight:800;letter-spacing:.055em}
       .contact-whatsapp b{color:#fff!important}
       .whatsapp-float{display:flex;align-items:center;gap:10px;padding:9px 16px 9px 9px;border:1px solid #dce5e0;border-radius:999px;background:#fff;color:#173127;box-shadow:0 8px 24px #071f3d1a;text-transform:none;letter-spacing:0}
       .whatsapp-float svg{display:block;width:32px;height:32px;padding:6px;border-radius:50%;background:#149b62;fill:#fff}
@@ -42,7 +44,7 @@
       .site-header{border-radius:0}.brand img{border-radius:0}.hero{border-radius:0}.carousel{border-radius:14px}.service-strip{border-radius:0}.service-card{border-radius:14px}.contact-panel{border-radius:18px}
       .button{border-radius:999px}
       @media(max-width:940px){#marcas .brand-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-      @media(max-width:700px){.site-header,.brand img,.hero,.service-strip{border-radius:0}.contact-panel{border-radius:15px}#contenido>.service-strip>.strip-items{min-height:0;grid-template-columns:1fr 1fr}#contenido>.service-strip>.strip-items>span{min-height:64px;padding:10px 14px;border-top:1px solid #ffffff26}#contenido>.service-strip>.strip-items>span:nth-child(odd){border-right:1px solid #ffffff30}#contenido>.service-strip>.strip-items>span:last-child{border-right:0}#marcas .brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#marcas .brand-item{min-height:72px;padding:12px}#marcas .brand-item img{max-width:105px;height:38px}#marcas .brand-item img[src$="willard.png"]{width:84px;height:42px;max-width:none}.whatsapp-float{padding:8px 13px 8px 8px}.whatsapp-float svg{width:30px;height:30px}}
+      @media(max-width:700px){.site-header,.brand img,.hero,.service-strip{border-radius:0}.contact-panel{border-radius:15px}#contenido>.service-strip>.strip-items{min-height:0;grid-template-columns:1fr 1fr}#contenido>.service-strip>.strip-items>span{min-height:64px;padding:10px 14px;border-top:1px solid #ffffff26}#contenido>.service-strip>.strip-items>span:nth-child(odd){border-right:1px solid #ffffff30}#contenido>.service-strip>.strip-items>span:last-child{border-right:0}#marcas .brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#marcas .brand-item{min-height:72px;padding:12px}#marcas .brand-item img{max-width:120px;height:46px}#marcas .brand-item-willard{gap:7px}#marcas .brand-item-willard img{flex-basis:42px;width:42px;height:42px}#marcas .brand-item-willard span{font-size:13px}.whatsapp-float{padding:8px 13px 8px 8px}.whatsapp-float svg{width:30px;height:30px}}
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1XLGSY39T"></script>
     <script>
@@ -127,8 +129,8 @@
         <div class="brand-item" style="--brand-color:#153f78;--brand-tint:#edf4fb" aria-label="Varta"><img src="assets/img/brands/varta-clarios.webp" alt="Varta" loading="lazy" /></div>
         <div class="brand-item" style="--brand-color:#c9252c;--brand-tint:#fcecee" aria-label="Motorcraft"><img src="assets/img/brands/motorcraft.svg" alt="Motorcraft" loading="lazy" /></div>
         <div class="brand-item" style="--brand-color:#164c81;--brand-tint:#edf3fb" aria-label="ACDelco"><img src="assets/img/brands/acdelco.svg" alt="ACDelco" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#df1e2e;--brand-tint:#101114" aria-label="Yuasa"><img src="assets/img/brands/yuasa.png" alt="Yuasa" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#d4232b;--brand-tint:#fff0b9" aria-label="Willard"><img src="assets/img/brands/willard.png" alt="Willard" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#df1e2e;--brand-tint:#000000" aria-label="Yuasa"><img src="assets/img/brands/yuasa.png" alt="Yuasa" loading="lazy" /></div>
+        <div class="brand-item brand-item-willard" style="--brand-color:#d4232b;--brand-tint:#fff0b9" aria-label="Willard"><img src="assets/img/brands/willard.png" alt="Símbolo de Willard" loading="lazy" /><span>WILLARD</span></div>
         <div class="brand-item" style="--brand-color:#f1a323;--brand-tint:#fff3e3" aria-label="Moura"><img src="assets/img/brands/moura.svg" alt="Moura" loading="lazy" /></div>
         <div class="brand-item" style="--brand-color:#123f82;--brand-tint:#edf3fb" aria-label="Hyundai"><img src="assets/img/brands/hyundai.svg" alt="Hyundai" loading="lazy" /></div>
       </div></div></section>
