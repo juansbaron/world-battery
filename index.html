@@ -31,9 +31,10 @@
       #contenido>.service-strip>.strip-items>span:hover{background:#091e37!important;color:#fff!important}
       #contenido>.service-strip>.strip-items>span:hover b{color:#ff858b}
       #marcas .brand-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
-      #marcas .brand-item{display:grid;place-items:center;min-width:0;min-height:84px;padding:14px;background:#fff;border:1px solid #e0e5e9;border-radius:13px;transition:background-color .22s ease,border-color .22s ease,transform .22s ease,box-shadow .22s ease}
+      #marcas .brand-item{display:grid;place-items:center;min-width:0;min-height:84px;padding:14px;background:var(--brand-tint,#fff);border:1px solid color-mix(in srgb,var(--brand-color) 24%,white);border-radius:13px;transition:background-color .22s ease,border-color .22s ease,transform .22s ease,box-shadow .22s ease}
       #marcas .brand-item img{display:block;width:100%;max-width:112px;height:44px;object-fit:contain}
-      #marcas .brand-item:hover{background-color:color-mix(in srgb,var(--brand-color) 10%,white);border-color:var(--brand-color);transform:translateY(-3px);box-shadow:0 12px 24px #06172a14}
+      #marcas .brand-item:hover{background-color:color-mix(in srgb,var(--brand-color) 15%,var(--brand-tint,white));border-color:var(--brand-color);transform:translateY(-3px);box-shadow:0 12px 24px #06172a14}
+      #marcas .brand-item img[src$="willard.png"]{width:96px;height:48px;max-width:none;object-fit:cover;object-position:left center}
       .contact-whatsapp b{color:#fff!important}
       .whatsapp-float{display:flex;align-items:center;gap:10px;padding:9px 16px 9px 9px;border:1px solid #dce5e0;border-radius:999px;background:#fff;color:#173127;box-shadow:0 8px 24px #071f3d1a;text-transform:none;letter-spacing:0}
       .whatsapp-float svg{display:block;width:32px;height:32px;padding:6px;border-radius:50%;background:#149b62;fill:#fff}
@@ -41,7 +42,7 @@
       .site-header{border-radius:0}.brand img{border-radius:0}.hero{border-radius:0}.carousel{border-radius:14px}.service-strip{border-radius:0}.service-card{border-radius:14px}.contact-panel{border-radius:18px}
       .button{border-radius:999px}
       @media(max-width:940px){#marcas .brand-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-      @media(max-width:700px){.site-header,.brand img,.hero,.service-strip{border-radius:0}.contact-panel{border-radius:15px}#contenido>.service-strip>.strip-items{min-height:0;grid-template-columns:1fr 1fr}#contenido>.service-strip>.strip-items>span{min-height:64px;padding:10px 14px;border-top:1px solid #ffffff26}#contenido>.service-strip>.strip-items>span:nth-child(odd){border-right:1px solid #ffffff30}#contenido>.service-strip>.strip-items>span:last-child{border-right:0}#marcas .brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#marcas .brand-item{min-height:72px;padding:12px}#marcas .brand-item img{max-width:105px;height:38px}.whatsapp-float{padding:8px 13px 8px 8px}.whatsapp-float svg{width:30px;height:30px}}
+      @media(max-width:700px){.site-header,.brand img,.hero,.service-strip{border-radius:0}.contact-panel{border-radius:15px}#contenido>.service-strip>.strip-items{min-height:0;grid-template-columns:1fr 1fr}#contenido>.service-strip>.strip-items>span{min-height:64px;padding:10px 14px;border-top:1px solid #ffffff26}#contenido>.service-strip>.strip-items>span:nth-child(odd){border-right:1px solid #ffffff30}#contenido>.service-strip>.strip-items>span:last-child{border-right:0}#marcas .brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#marcas .brand-item{min-height:72px;padding:12px}#marcas .brand-item img{max-width:105px;height:38px}#marcas .brand-item img[src$="willard.png"]{width:84px;height:42px;max-width:none}.whatsapp-float{padding:8px 13px 8px 8px}.whatsapp-float svg{width:30px;height:30px}}
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1XLGSY39T"></script>
     <script>
@@ -120,16 +121,16 @@
       </div></section>
 
       <section class="brands section-pad" id="marcas"><div class="container brands-layout"><div class="brands-copy"><p class="section-kicker">MARCAS RECONOCIDAS</p><h2>Una batería para<br />cada recorrido.</h2><p>Te orientamos para identificar una batería compatible con tu vehículo. Escríbenos para confirmar referencias y disponibilidad.</p><a class="brands-link" href="https://wa.me/573215139301?text=Hola%2C%20quiero%20saber%20qu%C3%A9%20bater%C3%ADa%20le%20sirve%20a%20mi%20veh%C3%ADculo" data-contact="whatsapp" target="_blank" rel="noopener noreferrer">Ayúdame a elegir <span>↗</span></a></div><div class="brand-grid" aria-label="Marcas de baterías disponibles">
-        <div class="brand-item" style="--brand-color:#ed1c24" aria-label="Bosch"><img src="assets/img/brands/bosch.svg" alt="Bosch" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#ee4036" aria-label="Rocket"><img src="assets/img/brands/rocket.svg" alt="Rocket" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#f4bb00" aria-label="MAC"><img src="assets/img/brands/mac.webp" alt="MAC" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#153f78" aria-label="Varta"><img src="assets/img/brands/varta-clarios.webp" alt="Varta" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#c9252c" aria-label="Motorcraft"><img src="assets/img/brands/motorcraft.svg" alt="Motorcraft" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#164c81" aria-label="ACDelco"><img src="assets/img/brands/acdelco.svg" alt="ACDelco" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#d71920" aria-label="Yuasa"><img src="assets/img/brands/yuasa-official.svg" alt="YUASA by GS Yuasa" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#d4232b" aria-label="Willard"><img src="assets/img/brands/willard.png" alt="Willard" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#f1c400" aria-label="Moura"><img src="assets/img/brands/moura.svg" alt="Moura" loading="lazy" /></div>
-        <div class="brand-item" style="--brand-color:#123f82" aria-label="Hyundai"><img src="assets/img/brands/hyundai.svg" alt="Hyundai" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#ed1c24;--brand-tint:#fff0f1" aria-label="Bosch"><img src="assets/img/brands/bosch.svg" alt="Bosch" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#ef573c;--brand-tint:#fff1ed" aria-label="Rocket"><img src="assets/img/brands/rocket.svg" alt="Rocket" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#f4bb00;--brand-tint:#fff7d9" aria-label="MAC"><img src="assets/img/brands/mac.webp" alt="MAC" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#153f78;--brand-tint:#edf4fb" aria-label="Varta"><img src="assets/img/brands/varta-clarios.webp" alt="Varta" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#c9252c;--brand-tint:#fcecee" aria-label="Motorcraft"><img src="assets/img/brands/motorcraft.svg" alt="Motorcraft" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#164c81;--brand-tint:#edf3fb" aria-label="ACDelco"><img src="assets/img/brands/acdelco.svg" alt="ACDelco" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#df1e2e;--brand-tint:#101114" aria-label="Yuasa"><img src="assets/img/brands/yuasa.png" alt="Yuasa" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#d4232b;--brand-tint:#fff0b9" aria-label="Willard"><img src="assets/img/brands/willard.png" alt="Willard" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#f1a323;--brand-tint:#fff3e3" aria-label="Moura"><img src="assets/img/brands/moura.svg" alt="Moura" loading="lazy" /></div>
+        <div class="brand-item" style="--brand-color:#123f82;--brand-tint:#edf3fb" aria-label="Hyundai"><img src="assets/img/brands/hyundai.svg" alt="Hyundai" loading="lazy" /></div>
       </div></div></section>
 
       <section class="process section-pad" id="como-funciona"><div class="container process-layout"><div><p class="section-kicker">ASÍ DE SENCILLO</p><h2>Nos escribes.<br /><span>Nos ponemos en marcha.</span></h2><p class="process-copy">Atención directa y coordinación sencilla para venta, instalación o asistencia por batería.</p><a class="button button-dark" href="https://wa.me/573215139301?text=Hola%2C%20necesito%20ayuda%20con%20mi%20veh%C3%ADculo" data-contact="whatsapp" target="_blank" rel="noopener noreferrer">Hablar con World Battery <span>↗</span></a></div><div class="steps"><article class="step"><span>01</span><div><h3>Cuéntanos qué necesitas</h3><p>Venta, instalación o un desvare por batería.</p></div></article><article class="step"><span>02</span><div><h3>Comparte los datos del vehículo</h3><p>Marca, modelo, año y ubicación nos ayudan a orientarte.</p></div></article><article class="step"><span>03</span><div><h3>Coordinamos contigo</h3><p>Te contactamos para revisar la opción y el servicio.</p></div></article></div></div></section>

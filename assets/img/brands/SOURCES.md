@@ -10,7 +10,7 @@ Estos archivos muestran marcas que World Battery comercializa. Los nombres y log
 | `varta-clarios.webp` | VARTA | [Clarios, marca VARTA](https://useast2prodbrandsites.blob.core.windows.net/sf-assets/images/default-source/brands/varta/varta_lockup_rgb_blue_deborah-gonzalez.webp?sfvrsn=5c96460f_9), biblioteca corporativa de Clarios. |
 | `motorcraft.svg` | Motorcraft | [Motorcraft en Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Motorcraft_logo.svg), identificada como logotipo en el informe anual 2017 de Ford y clasificada como PD-textlogo. |
 | `acdelco.svg` | ACDelco | [ACDelco en Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:ACDelco), SVG de marca clasificado como logotipo de texto de dominio público. |
-| `yuasa-official.svg` | YUASA by GS Yuasa | [GS YUASA en Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GS_YUASA_logo.svg). La [guía de marca oficial de Yuasa](https://www.yuasa.com/uk/yuasa-brand-hub) indica usar la marca Yuasa by GS Yuasa. |
+| `yuasa.png` | YUASA | Logotipo PNG de Yuasa enviado por el cliente para esta página. |
 | `willard.png` | Willard | [Baterías Willard](https://bateriaswillard.com/), logotipo tomado del encabezado del sitio oficial. |
 | `moura.svg` | Moura | [Moura en Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logotipo_da_Baterias_Moura.svg), archivo cuya fuente indicada es el sitio oficial de Moura y clasificado como PD-textlogo. |
 | `hyundai.svg` | Hyundai | [Hyundai en Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hyundai_logo.svg), wordmark de texto atribuido a Hyundai y clasificado como PD-textlogo. |
